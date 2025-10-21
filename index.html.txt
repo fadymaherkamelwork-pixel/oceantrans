@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OCEAN TRANS - Ship Supplies</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo-link">OCEAN TRANS</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Animated wave background (SVG) -->
+  <div class="wave-bg" aria-hidden="true">
+    <svg class="waves" viewBox="0 0 1200 200" preserveAspectRatio="none">
+      <path id="wavePath" d="M0,100 C150,200 350,0 600,100 C850,200 1050,0 1200,100 L1200,200 L0,200 Z" />
+    </svg>
+  </div>
+
+  <!-- HERO / HOME -->
+  <main id="root">
+    <section id="home" class="section hero">
+      <div class="hero-inner container">
+        <img src="images/logo.png" alt="OCEAN TRANS logo" class="logo" />
+        <h1 class="title">Reliable Ship Supplies &amp; Marine Services</h1>
+        <p class="subtitle">Comprehensive solutions for ship needs worldwide — quality & reliability.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn primary">Contact Us</a>
+          <a href="#services" class="btn ghost">Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about hidden">
+      <div class="container content">
+        <h2>About Us</h2>
+        <p>Ocean Trans provides professional ship supplies and marine logistics with a strong focus on timely delivery, compliance and customer satisfaction. Our local presence in Alexandria ensures efficient handling and support for visiting vessels.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services-section hidden">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon">⛽</div>
+            <h3>Fuel Supply</h3>
+            <p>High-quality marine fuel delivered on schedule at competitive prices.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🍽️</div>
+            <h3>Provisions</h3>
+            <p>Fresh provisions and catering supplies for crew comfort and safety.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🛠️</div>
+            <h3>Maintenance & Repair</h3>
+            <p>Fast, certified maintenance and repairs for systems and equipment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section hidden">
+      <div class="container content">
+        <h2>Contact</h2>
+        <p>You're welcome to reach out — contact details will be added soon. Meanwhile you can use the form below to send a message.</p>
+
+        <form id="contactForm" class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+          <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 OCEAN TRANS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
